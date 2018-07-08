@@ -1,0 +1,33 @@
+{
+  "name": "alteryx",
+  "version": "1.0.0",
+  "description": "Alteryx",
+  "main": "index.js",
+  "scripts": {
+    "start": "export NODE_ENV=dev NODE_CONFIG_DIR=./src/config/ && nodemon -w src --exec \"babel-node src/app.js --presets es2015,stage-0\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvavrik/alteryx.git"
+  },
+  "author": "pvavrik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pvavrik/alteryx/issues"
+  },
+  "homepage": "https://github.com/pvavrik/alteryx#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "config": "^1.26.2",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.11.0"
+  }
+}
